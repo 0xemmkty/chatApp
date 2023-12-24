@@ -37,7 +37,7 @@
     "degenerator": "^3.0.4",
     "depd": "^2.0.0",
     "destroy": "^1.2.0",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.3.1",
     "ecdsa-sig-formatter": "^1.0.11",
     "ee-first": "^1.1.1",
     "encodeurl": "^1.0.2",
@@ -123,6 +123,7 @@
     "qs": "^6.11.0",
     "range-parser": "^1.2.1",
     "raw-body": "^2.5.2",
+    "react-facebook-login": "^4.1.1",
     "readable-stream": "^2.3.8",
     "regenerator-runtime": "^0.13.11",
     "safe-buffer": "^5.2.1",
@@ -166,8 +167,7 @@
     "yup": "^0.32.9"
   },
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
+    "start": "node backend/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
