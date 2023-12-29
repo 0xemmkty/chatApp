@@ -189,7 +189,9 @@ const { isAuth ,setIsAuth } = ChatState();
               variant="body1"
               align="center"
               style={{ marginTop: "1rem" }}
-            >
+              className={classes.donthaveaccount}
+
+            > 
               Don't have an account?
               <Link to="/signup" className={classes.createAccount}>
                 Create Account

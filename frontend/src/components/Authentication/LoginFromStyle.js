@@ -1,5 +1,6 @@
 /* eslint-disable no-dupe-keys */
 import { makeStyles } from "@material-ui/core/styles";
+
 const useStyles = makeStyles((theme) => ({
   formContainer: {
     display: "flex",
@@ -7,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     marginTop: "3rem",
     height: "auto",
-    color: "#F2F2F5",
+    color: "#000000", // Changed to black
     [theme.breakpoints.down(499)]: {
       width: "100%",
     },
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     alignContent: "center",
     padding: "2rem",
     width: "70vmin",
-    color: "#F2F2F5",
+    color: "#000000", // Changed to black
     [theme.breakpoints.down(699)]: {
       width: "80%",
     },
@@ -30,12 +31,11 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     textAlign: "center",
     marginBottom: theme.spacing(3),
-    color: "#F2F2F5",
+    color: "#FF69B4", // Changed to pink
     fontWeight: 800,
     [theme.breakpoints.down(699)]: {
       fontSize: "1.3rem",
     },
-
     [theme.breakpoints.down(499)]: {
       fontSize: "1rem",
     },
@@ -85,13 +85,13 @@ const useStyles = makeStyles((theme) => ({
   showPasswordButton: {
     position: "absolute",
     top: "50%",
-    color: "#004FC4",
+    color: "#FF69B4", // Changed to pink
     fontSize: "12px",
     right: theme.spacing(2),
     transform: "translateY(-50%)",
     border: "none",
     "&:hover": {
-      color: "#6600CC",
+      color: "#FFFFFF", // Changed to white
       background: "none",
     },
   },
@@ -101,22 +101,23 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     fontSize: "14px",
     marginTop: theme.spacing(7),
+    color: "#FF69B4",
     "& .MuiIconButton-label": {
-      color: "#004FC4",
+      color: "#FFFFFF", // Changed to pink
     },
   },
   forgotPasswordLink: {
-    color: "#004FC4",
+    color: "#FF69B4", // Changed to pink
     textDecoration: "none",
     fontWeight: 600,
     "&:hover": {
       textDecoration: "underline",
-      color: "#6600CC",
+      color: "#FFFFFF", // Changed to black
     },
   },
   termsAndConditionsText: {
     fontFamily: "Roboto",
-    color: "#E4E4EB",
+    color: "#FFFFFF", // Changed to black
     textAlign: "center",
     lineHeight: "17px",
     paddingLeft: "4px",
@@ -125,40 +126,42 @@ const useStyles = makeStyles((theme) => ({
   },
   loginButton: {
     color: "#fff",
-    backgroundColor: "#004FC4",
-    border: "2px solid #004FC4",
+    backgroundColor: "#FF69B4", // Changed to pink
+    border: "2px solid #FF69B4", // Changed to pink
     margin: `${theme.spacing(3)}px 0`,
     marginTop: "1rem",
     "&:disabled": {
-      backgroundColor: "#3E7BFA", // faded black
+      backgroundColor: "#000000", // Changed to black
       color: "#E4E4EB",
-      borderColor: "#3E7BFA",
+      borderColor: "#000000", // Changed to black
     },
     "&:hover": {
-      backgroundColor: "#6600CC",
-      borderColor: "#6600CC",
+      backgroundColor: "#000000", // Changed to black
+      borderColor: "#000000", // Changed to black
     },
   },
   privacyText: {
     marginLeft: "4px",
     textDecoration: "underline",
-    color: "#004FC4",
+    color: "#FF69B4", // Changed to pink
     fontSize: "14px",
     "&:hover": {
-      color: "#6600CC",
+      color: "#000000", // Changed to black
     },
   },
   createAccount: {
     fontSize: "1rem",
     fontWeight: 500,
-    color: "#004FC4",
+    color: "#FF69B4", // Changed to pink
     paddingLeft: "6px",
     "&:hover": {
-      color: "#6600CC",
+      color: "#FFFFFF", // Changed to black
       textDecoration: "underline",
     },
   },
-  // input text Filed
+  donthaveaccount:{
+    color: "#FFFFFF"
+  },
   textField: {
     "& .MuiOutlinedInput-adornedEnd": {
       paddingRight: theme.spacing(0),
@@ -179,8 +182,7 @@ const useStyles = makeStyles((theme) => ({
     },
     "& .MuiOutlinedInput-root": {
       "&:hover fieldset": {
-        borderColor: "#004FC4",
-        color: "#004FC4",
+        borderColor: "#FF69B4", // Changed to pink
       },
       "& .MuiOutlinedInput-input": {
         padding: "13px 8px",
@@ -188,18 +190,15 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: "5px",
       },
       "& .Mui-focused fieldset": {
-        borderColor: "#6600CC",
-        color: "#6600CC",
+        borderColor: "#000000", // Changed to black
         outline: "none",
       },
     },
   },
 
-  // signUp
-
   avatar: {
-    margin: " 8px auto",
-    backgroundColor: "#004FC4",
+    margin: "8px auto",
+    backgroundColor: "#FF69B4", // Changed to pink
   },
   gridcheckbox: {
     display: "flex",
@@ -210,14 +209,14 @@ const useStyles = makeStyles((theme) => ({
   checkbox: {
     "& .MuiTypography-body1": {
       fontSize: "13px",
+      color:"#FFFFFF"
     },
     marginTop: theme.spacing(1),
     "& .MuiIconButton-label": {
-      color: "#004FC4",
+      color: "#FF69B4", // Changed to pink
     },
   },
 
-  // image uploader
   root: {
     display: "flex",
     flexDirection: "row",
@@ -227,13 +226,13 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar2: {
     marginLeft: "6px",
-    backgroundColor: "#004FC4",
+    backgroundColor: "#FF69B4", // Changed to pink
     "&.MuiAvatar-colorDefault": {
       color: "#F2F2F5",
-      backgroundColor: "#004FC4",
+      backgroundColor: "#FF69B4", // Changed to pink
     },
     "&:hover": {
-      backgroundColor: "#6600CC",
+      backgroundColor: "#000000", // Changed to black
     },
   },
   input: {
@@ -241,11 +240,12 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     color: "white",
-    backgroundColor: "#004FC4",
+    backgroundColor: "#FF69B4", // Changed to pink
     "&:hover": {
-      backgroundColor: "#6600CC",
+      backgroundColor: "#000000", // Changed to black
     },
   },
 }));
 
 export default useStyles;
+
